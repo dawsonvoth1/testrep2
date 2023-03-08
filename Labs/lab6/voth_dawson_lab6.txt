@@ -1,0 +1,17 @@
+(3.2 Excersises)
+1. I decided to update the Jacobian when the difference of the norm(x1-x0) from each the previous iteration was too small. My limit I set for being to small was 1e-3.
+
+2. Implemented.
+
+3. Applied
+
+4./5. My version of slacker cut down on the number of iterations compared to lazy newton. Most the time running slacker it was faster then regualr newton, however it was normally not as fast as lazy newton.
+
+(3.3 Excersises)
+
+1. Applied
+
+2. I noticed that the bigger h_j was made that the more iterations it took for the newton function to complete.
+
+3. The method had more iterations, but was sometimes faster.
+
