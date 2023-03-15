@@ -1,0 +1,9 @@
+(3.1)
+2. I did not notice a difference in performance between the errors and graphs for N=2,..,10.
+
+3. The different techniques still look the same around N=20 but now you can see how the error is getting larger on the edges on the interval. Getting up to N=40 I can start to notice differences in the error between the different methods.
+
+4. The similarities I notice between the two functions is theat the error is bigger on the edges as N is increases. I didn't notice issues in the error plot until around 30.
+
+(3.2)
+I didn't know how to space the nodes like this, but I pressume it would make the error flatter.
