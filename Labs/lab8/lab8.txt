@@ -1,0 +1,6 @@
+Lab 8
+(3.2)
+You can see that the error of the linear spline is more stable throughouyt the whole interval and it gets smaller around the edges of the subintervals. The error of newton DD and lagrange is smaller though until N~50 and the error close to edges of newton DD and lagrange beomes bigger then the linnear spline error.
+
+(3.3)
+I couldn't get my code working for cubic splines and even tried the scipy package for cubic spline sand it still didn't work. However I'm sure the errors workout similar besides that cubic splines will have smaller errors inbetween subintervals compared to linear splines.
