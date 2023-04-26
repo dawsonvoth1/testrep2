@@ -1,0 +1,6 @@
+I'm not sure if I was getting the correct error value, but from what I could tell from the graphs the error was about the same for each scheme. However, guass was the fastest, simpsons was the second fastest, and trapezoidal was the slowest out of the three.
+For the number intervals needed for the tolorance 1e-13:
+Gauss: 3
+Simpsons: 95
+Trapezoidal: 4875
+So from this I think the Gauss scheme would be the best choice.
