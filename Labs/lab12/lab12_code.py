@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import numpy.linalg as la
 import scipy.linalg as scila
+import time
 
 
 def driver():
@@ -10,18 +11,34 @@ def driver():
      linear system'''
 
      '''' N = size of system'''
-     N = 100
+     N = 1000
  
      ''' Right hand side'''
-     b = np.random.rand(N,1)
+     b1 = np.random.rand(N,10)
+     b2 = np.array(b1)
      A = np.random.rand(N,N)
-  
-     x = scila.solve(A,b)
+
+     p, l, u = scila.lu(A)
+     start1 = time.time()
+     lu, piv = scila.lu_factor(A)
+     end1 = time.time()
+     fact = end1 - start1
+     start1 = time.time()
+     x2 = scila.lu_solve((lu,piv), b2)
+     end1 = time.time()
+     solving = end1 - start1
+     print(fact + solving, fact, solving)
+     test2 = np.matmul(A,x2)
+     r2 = la.norm(test2-b2)
+
+     start2 = time.time()
+     x1 = scila.solve(A,b1)
+     end2 = time.time()
+     print(end2 - start2)
+     test1 = np.matmul(A,x1)
+     r1 = la.norm(test1-b1)
      
-     test = np.matmul(A,x)
-     r = la.norm(test-b)
-     
-     print(r)
+     print(r1, r2)
 
      ''' Create an ill-conditioned rectangular matrix '''
      N = 10

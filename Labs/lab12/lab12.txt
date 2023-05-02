@@ -1,0 +1,4 @@
+Lab 12
+The construction of the LU factorization took longer then the processing for a solve for all of N I tried.
+The LU solver is faster for all the sizes I tried, which is what I would have assumed. With and without the factorization added in the LU was still faster.
+The LU solver was faster for all numbers of right hand sides I tried and as I went bigger the LU solver performed better comparably.
